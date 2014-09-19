@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sticky_note_bg" >
+
+    <ViewFlipper
+        android:id="@+id/vf_reminder"
+        android:layout_width="fill_parent"
+        android:layout_height="230dp"
+        android:layout_above="@+id/btn_done"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/reminder_bg_color" >
+
+    </ViewFlipper>
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/button_bg_color"
+        android:onClick="onGeneratePrgClickHandler"
+        android:text="@string/generate_program"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_font_size" />
+
+    <EditText
+        android:id="@+id/reminder_note"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:hint="@string/rem_note_hint"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" >
+    </EditText>
+
+</RelativeLayout>

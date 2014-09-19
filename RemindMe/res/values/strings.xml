@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RemindMe</string>
+    
+   	<string name="error">Error</string>
+   	<string name="help">Help</string>
+    <string name="ok">Ok</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="date">Date</string>
+
+    <!-- button labels -->
+    <string name="generate_program">Generate Program</string>
+    <string name="save">Save</string>
+    <string name="done">Done</string>
+    <string name="edit">Edit</string>
+
+    <!-- text labels -->
+    <string name="object">Object:</string>
+    <string name="task">Task:</string>
+    <string name="property">Property:</string>
+    <string name="when">When:</string>
+    <string name="where">Where:</string>
+    <string name="while_">While:</string>
+    <string name="who">Who:</string>
+    <string name="how">How:</string>
+    
+    <string name="remind">Remind</string>
+    <string name="remind_object">[Object: ]</string>
+    <string name="remind_task">[Task: ]</string>
+    <string name="remind_property">[Property: ]</string>
+    <string name="remind_when">[When: ]</string>
+    <string name="remind_where">[Where: ]</string>
+    <string name="remind_while_">[While: ]</string>
+    <string name="remind_who">[Who: ]</string>
+    <string name="remind_how">[How: ]</string>
+    
+    <string name="object_info_msg">Test Help message...</string>
+    <string name="task_info_msg">Test Help message...</string>
+    <string name="property_info_msg">Test Help message...</string>
+    <string name="calender_info_msg">Test Help message...</string>
+    <string name="location_info_msg">Test Help message...</string>
+    <string name="activity_info_msg">Test Help message...</string>
+    <string name="who_info_msg">Test Help message...</string>
+    <string name="channel_info_msg">Test Help message...</string>
+    
+    <string name="calender_daytime_info_msg">Test Help message...</string>
+
+    <string name="program_name">Program</string>
+    <string name="program_desc">Some Description about the Program goes here.........</string>
+    
+    <string name="program_title">Select properties to program</string>
+    <string name="power">Power</string>
+    <string name="water_level">Water Level</string>
+    <string name="status">Status</string>
+    
+    <string name="calender_header">Calendering....</string>
+    <string name="calender_title">Select the date and time to notify....</string>    
+    <string name="in">In</string>
+    <string name="repeat">Repeat</string>
+    <string name="for_the_next">For the next</string>
+    <string name="summer">Summer</string>
+    <string name="winter">Winter</string>
+    <string name="autum">Autum</string>
+    <string name="spring">Spring</string>    
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="sun">SUN</string>    
+    <string name="day">Day</string>
+    <string name="night">Night</string>
+    
+    <string name="location_header">Location....</string>
+    <string name="location_title">Select the location to notify....</string>
+    
+    <string name="activity_header">When doing....</string>
+    <string name="activity_title">Select the activity to notify....</string>    
+    <string name="act1_text">Shopping</string>
+    <string name="act2_text">Cooking</string>
+    <string name="act3_text">Vaccuuming</string>
+    <string name="act4_text">Gardening</string>
+    <string name="act5_text">Washing Car</string>
+    <string name="act6_text">Before leaving to farm</string>
+    
+    <string name="channel_header">Channels....</string>
+    <string name="channel_title">Select the channel to notify....</string>    
+    <string name="chan1_text">RemindMe</string>
+    <string name="chan2_text">SMS</string>
+    <string name="chan3_text">Email</string>
+    <string name="chan4_text">Call</string>
+    
+    <string name="contact_header">Contacts....</string>
+    <string name="contact_title">Select the contacts to notify....</string>
+    
+    <string name="task_header">Task to Perform....</string>
+    <string name="task_title">Select the task to notify....</string>
+    
+    <string name="rem_note_hint">Type reminder note using [keyboard] input or [voice] input.\nSee the samples below...</string>
+    
+</resources>

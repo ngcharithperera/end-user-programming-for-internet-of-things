@@ -1,0 +1,469 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_save"
+        android:layout_marginBottom="10dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/object_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <Button
+                    android:id="@+id/icn_object_info"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/icon_info" />
+
+                <TextView
+                    android:id="@+id/txtobject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/icn_object_info"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/icn_object_info"
+                    android:text="@string/object"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_font_size" />
+
+                <LinearLayout
+                    android:id="@+id/object_detail_container"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/icn_object_info"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/object_img"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/object_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/large_detail_font_size" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/object_img_edit"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignBottom="@+id/txtobject"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_edit" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/task_container"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/object_container"
+                android:layout_marginTop="20dp" >
+
+                <Button
+                    android:id="@+id/icn_task_info"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/icon_info" />
+
+                <TextView
+                    android:id="@+id/txttask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/icn_task_info"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/icn_task_info"
+                    android:text="@string/task"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_font_size" />
+
+                <TextView
+                    android:id="@+id/task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/icn_task_info"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toLeftOf="@+id/task_note"
+                    android:layout_toRightOf="@+id/icn_task_info"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_detail_font_size" />
+
+                <Button
+                    android:id="@+id/task_img_check"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignBottom="@+id/txttask"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_edit" />
+
+                <Button
+                    android:id="@+id/task_img_edit"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignBottom="@+id/task_img_check"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/task_img_check"
+                    android:background="@drawable/icon_edit" />
+
+                <Button
+                    android:id="@+id/task_note"
+                    android:layout_width="34dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBottom="@+id/task_img_edit"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/task_img_edit"
+                    android:background="@drawable/img_stick_note" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/property_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/task_container"
+                android:layout_marginTop="20dp" >
+
+                <Button
+                    android:id="@+id/icn_property_info"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/txtproperty"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/icon_info" />
+
+                <TextView
+                    android:id="@+id/txtproperty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/icn_property_info"
+                    android:text="@string/property"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_font_size" />
+
+                <LinearLayout
+                    android:id="@+id/txtproperty_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toLeftOf="@+id/property_img_edit"
+                    android:layout_toRightOf="@+id/icn_property_info"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/property_img_edit"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignBottom="@+id/icn_property_info"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_edit" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/when_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/property_container"
+                android:layout_marginTop="20dp" >
+
+                <Button
+                    android:id="@+id/icn_when_info"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/txtwhen"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/icon_info" />
+
+                <TextView
+                    android:id="@+id/txtwhen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/icn_when_info"
+                    android:text="@string/when"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_font_size" />
+
+                <LinearLayout
+                    android:id="@+id/txtwhen_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/icn_when_info"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/when"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/large_detail_font_size" />
+
+                    <TextView
+                        android:id="@+id/when2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/large_detail_font_size" />
+
+                    <TextView
+                        android:id="@+id/when3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/large_detail_font_size" />
+
+                    <TextView
+                        android:id="@+id/when4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/large_detail_font_size" />
+
+                    <TextView
+                        android:id="@+id/when5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/large_detail_font_size" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/when_img_edit"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignBottom="@+id/txtwhen"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_edit" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/where_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/when_container"
+                android:layout_marginTop="20dp" >
+
+                <Button
+                    android:id="@+id/icn_where_info"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/icon_info" />
+
+                <TextView
+                    android:id="@+id/txtwhere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/icn_where_info"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/icn_where_info"
+                    android:text="@string/where"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_font_size" />
+
+                <com.meetme.android.horizontallistview.HorizontalListView
+                    android:id="@+id/nw_where_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/where_img_edit"
+                    android:layout_toRightOf="@+id/icn_where_info" />
+
+                <Button
+                    android:id="@+id/where_img_edit"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignBottom="@+id/txtwhere"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_edit" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/while_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/where_container"
+                android:layout_marginTop="20dp" >
+
+                <Button
+                    android:id="@+id/icn_while_info"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/icon_info" />
+
+                <TextView
+                    android:id="@+id/txtwhile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/icn_while_info"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/icn_while_info"
+                    android:text="@string/while_"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_font_size" />
+
+                <com.meetme.android.horizontallistview.HorizontalListView
+                    android:id="@+id/nw_while_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/while_img_edit"
+                    android:layout_toRightOf="@+id/icn_while_info" />
+
+                <Button
+                    android:id="@+id/while_img_edit"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignBottom="@+id/txtwhile"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_edit" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/who_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/while_container"
+                android:layout_marginTop="20dp" >
+
+                <Button
+                    android:id="@+id/icn_who_info"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/icon_info" />
+
+                <TextView
+                    android:id="@+id/txtwho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/icn_who_info"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/icn_who_info"
+                    android:text="@string/who"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_font_size" />
+
+                <com.meetme.android.horizontallistview.HorizontalListView
+                    android:id="@+id/nw_who_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/who_img_edit"
+                    android:layout_toRightOf="@+id/icn_who_info" />
+
+                <Button
+                    android:id="@+id/who_img_edit"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignBottom="@+id/txtwho"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_edit" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/how_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/who_container"
+                android:layout_marginTop="20dp" >
+
+                <Button
+                    android:id="@+id/icn_how_info"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/icon_info" />
+
+                <TextView
+                    android:id="@+id/txthow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/icn_how_info"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/icn_how_info"
+                    android:text="@string/how"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_font_size" />
+
+                <com.meetme.android.horizontallistview.HorizontalListView
+                    android:id="@+id/nw_how_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/how_img_edit"
+                    android:layout_toRightOf="@+id/icn_how_info" />
+
+                <Button
+                    android:id="@+id/how_img_edit"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignBottom="@+id/txthow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_edit" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/button_bg_color"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_font_size" />
+
+</RelativeLayout>

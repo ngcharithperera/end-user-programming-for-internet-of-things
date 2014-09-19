@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Change tab text size -->
+    <style name="MyActionBarTabTextStyle" parent="Widget.Sherlock.ActionBar.TabText">
+	    <item name="android:textSize">11sp</item>
+	</style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Sherlock.Light">
+        <item name="actionBarTabTextStyle">@style/MyActionBarTabTextStyle</item>
+		<item name="android:actionBarTabTextStyle">@style/MyActionBarTabTextStyle</item>
+    </style>
+    
+    <style name="AppBaseTheme" parent="Theme.Sherlock.Light">
+	</style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+    </style>
+
+</resources>

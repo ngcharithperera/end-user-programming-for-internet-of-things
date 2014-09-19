@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+            
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    
+   	<color name="light_orange">#ffffc6</color>
+    <color name="red">#f46164</color>
+    <color name="gray">#848484</color>
+    <color name="ash">#b6b6b6</color>
+    
+    <color name="button_bg_color">#cb6009</color>
+    <color name="dialog_note_bg_color">#ffff8e</color>
+    <color name="reminder_bg_color">#fbd0ad</color>
+    
+</resources>

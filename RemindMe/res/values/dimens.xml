@@ -1,0 +1,13 @@
+<resources>
+
+    <dimen name="large_font_size">18sp</dimen>
+    <dimen name="title_font_size">28sp</dimen>
+    <dimen name="large_detail_font_size">16sp</dimen>
+    
+    <dimen name="medium_font_size">16sp</dimen>
+    <dimen name="medium_title_font_size">24sp</dimen>
+    <dimen name="medium_detail_font_size">14sp</dimen>
+    
+    <dimen name="small_font_size">10sp</dimen>
+    
+</resources>

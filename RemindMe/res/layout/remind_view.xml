@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/reminder_bg_color"
+    android:padding="6dp" >
+
+    <TextView
+        android:id="@+id/txt_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remind"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" />
+
+    <TextView
+        android:id="@+id/txt_who"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_remind"
+        android:layout_below="@+id/txt_remind"
+        android:layout_marginTop="10dp"
+        android:text="@string/remind_who"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" />
+
+    <TextView
+        android:id="@+id/who"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_who"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/txt_who"
+        android:singleLine="true"
+        android:text="jon or Alice to"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" />
+
+    <TextView
+        android:id="@+id/txt_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_who"
+        android:layout_below="@+id/txt_who"
+        android:layout_marginTop="2dp"
+        android:text="@string/remind_task"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" />
+
+    <TextView
+        android:id="@+id/task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_task"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/txt_task"
+        android:singleLine="true"
+        android:text="clean the filter in the"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" />
+
+    <TextView
+        android:id="@+id/txt_object"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_task"
+        android:layout_below="@+id/txt_task"
+        android:layout_marginTop="2dp"
+        android:text="@string/remind_object"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" />
+
+    <TextView
+        android:id="@+id/object"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_object"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/txt_object"
+        android:singleLine="true"
+        android:text="washing machine when they come to"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" />
+
+    <TextView
+        android:id="@+id/txt_property"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_object"
+        android:layout_below="@+id/txt_object"
+        android:layout_marginTop="2dp"
+        android:text="@string/remind_property"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" />
+
+    <TextView
+        android:id="@+id/property"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_property"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/txt_property"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" />
+
+    <TextView
+        android:id="@+id/txt_where"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_property"
+        android:layout_below="@+id/txt_property"
+        android:layout_marginTop="2dp"
+        android:text="@string/remind_where"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" />
+
+    <TextView
+        android:id="@+id/where"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_where"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/txt_where"
+        android:singleLine="true"
+        android:text="laundery room"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" />
+
+    <TextView
+        android:id="@+id/txt_while"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_where"
+        android:layout_below="@+id/txt_where"
+        android:layout_marginTop="2dp"
+        android:text="@string/remind_while_"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" />
+
+    <TextView
+        android:id="@+id/while_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_while"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/txt_while"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" />
+
+    <TextView
+        android:id="@+id/txt_when"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_while"
+        android:layout_below="@+id/txt_while"
+        android:layout_marginTop="2dp"
+        android:text="@string/remind_when"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" />
+
+    <TextView
+        android:id="@+id/when"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_when"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/txt_when"
+        android:singleLine="true"
+        android:text="during the weekend"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" />
+
+    <TextView
+        android:id="@+id/txt_how"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_when"
+        android:layout_below="@+id/txt_when"
+        android:layout_marginTop="2dp"
+        android:text="@string/remind_how"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" />
+
+    <TextView
+        android:id="@+id/how"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_how"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/txt_how"
+        android:singleLine="true"
+        android:text="using Remindme app"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_font_size" />
+
+</RelativeLayout>
