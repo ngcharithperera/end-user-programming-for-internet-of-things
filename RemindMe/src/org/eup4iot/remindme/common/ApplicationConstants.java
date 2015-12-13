@@ -22,25 +22,25 @@ public interface ApplicationConstants {
     
     String USER_INPUTS_ERROR_MSG = "Invalid user input";
     
-    String SERVER_BASE_URL = "http://demo3296522.mockable.io/";
+    String SERVER_BASE_URL = "http://eup4iot.getsandbox.com/";
     
-    String GET_ACTIVITY_URL = "getActivities";
+    String GET_ACTIVITY_URL = "activities";
     
-    String GET_CHANNELS_URL = "getChannels";
+    String GET_CHANNELS_URL = "channels";
     
-    String GET_LOCATION_URL = "getLocations";
+    String GET_LOCATION_URL = "locations";
     
-    String GET_OBJECTPROPERTY_URL = "getObjectProperties";
+    String GET_OBJECTPROPERTY_URL = "objectproperties";
     
     String GET_PROGRAMS_URL = "getProgram";
     
-    String GET_RECOMMENDATIONS_URL = "getRecommendations";
+    String GET_RECOMMENDATIONS_URL = "recommendedprograms";
     
-    String GET_SMARTOBJECTS_URL = "getSmartObjects";
+    String GET_SMARTOBJECTS_URL = "smartobjects";
     
-    String GET_TASKS_URL = "getTasks";   
+    String GET_TASKS_URL = "tasks";   
     
-    String GET_USERS_URL = "getUsers";
+    String GET_USERS_URL = "users";
     
     String SERVICE_GET_RECOMMENDATIONS = "service.getRecommendations";
     

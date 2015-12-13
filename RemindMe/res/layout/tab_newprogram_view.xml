@@ -23,6 +23,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp" >
 
+                <TextView
+                    android:id="@+id/txtobject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/object"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_font_size" />
+
                 <Button
                     android:id="@+id/icn_object_info"
                     android:layout_width="25dp"
@@ -31,17 +40,6 @@
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/icon_info" />
-
-                <TextView
-                    android:id="@+id/txtobject"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/icn_object_info"
-                    android:layout_marginRight="5dp"
-                    android:layout_toLeftOf="@+id/icn_object_info"
-                    android:text="@string/object"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/medium_font_size" />
 
                 <LinearLayout
                     android:id="@+id/object_detail_container"
@@ -70,7 +68,7 @@
                     android:id="@+id/object_img_edit"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:layout_alignBottom="@+id/txtobject"
+                    android:layout_alignBottom="@+id/icn_object_info"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/icon_edit" />
@@ -83,6 +81,14 @@
                 android:layout_below="@+id/object_container"
                 android:layout_marginTop="20dp" >
 
+                <TextView
+                    android:id="@+id/txttask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/task"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_font_size" />
+
                 <Button
                     android:id="@+id/icn_task_info"
                     android:layout_width="25dp"
@@ -91,17 +97,6 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="70dp"
                     android:background="@drawable/icon_info" />
-
-                <TextView
-                    android:id="@+id/txttask"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/icn_task_info"
-                    android:layout_marginRight="5dp"
-                    android:layout_toLeftOf="@+id/icn_task_info"
-                    android:text="@string/task"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/medium_font_size" />
 
                 <TextView
                     android:id="@+id/task"
@@ -118,7 +113,7 @@
                     android:id="@+id/task_img_check"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:layout_alignBottom="@+id/txttask"
+                    android:layout_alignBottom="@+id/icn_task_info"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/icon_edit" />
@@ -158,16 +153,6 @@
                     android:layout_marginLeft="70dp"
                     android:background="@drawable/icon_info" />
 
-                <TextView
-                    android:id="@+id/txtproperty"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_toLeftOf="@+id/icn_property_info"
-                    android:text="@string/property"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/medium_font_size" />
-
                 <LinearLayout
                     android:id="@+id/txtproperty_container"
                     android:layout_width="wrap_content"
@@ -187,6 +172,16 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/icon_edit" />
+
+                <TextView
+                    android:id="@+id/txtproperty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/property"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_font_size" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -204,16 +199,6 @@
                     android:layout_alignTop="@+id/txtwhen"
                     android:layout_marginLeft="70dp"
                     android:background="@drawable/icon_info" />
-
-                <TextView
-                    android:id="@+id/txtwhen"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_toLeftOf="@+id/icn_when_info"
-                    android:text="@string/when"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/medium_font_size" />
 
                 <LinearLayout
                     android:id="@+id/txtwhen_container"
@@ -268,6 +253,16 @@
                     android:layout_alignTop="@+id/txtwhen"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/icon_edit" />
+
+                <TextView
+                    android:id="@+id/txtwhen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/when"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_font_size" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -286,17 +281,6 @@
                     android:layout_marginTop="20dp"
                     android:background="@drawable/icon_info" />
 
-                <TextView
-                    android:id="@+id/txtwhere"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/icn_where_info"
-                    android:layout_marginRight="5dp"
-                    android:layout_toLeftOf="@+id/icn_where_info"
-                    android:text="@string/where"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/medium_font_size" />
-
                 <com.meetme.android.horizontallistview.HorizontalListView
                     android:id="@+id/nw_where_listview"
                     android:layout_width="match_parent"
@@ -310,10 +294,19 @@
                     android:id="@+id/where_img_edit"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:layout_alignBottom="@+id/txtwhere"
+                    android:layout_alignBottom="@+id/icn_where_info"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/icon_edit" />
+
+                <TextView
+                    android:id="@+id/txtwhere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/where"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_font_size" />
+
             </RelativeLayout>
 
             <RelativeLayout
@@ -454,6 +447,7 @@
                     android:background="@drawable/icon_edit" />
             </RelativeLayout>
         </RelativeLayout>
+
     </ScrollView>
 
     <Button

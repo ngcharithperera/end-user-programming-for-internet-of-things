@@ -45,19 +45,19 @@ containing a value of this type.
           attribute's value can be found in the {@link #HorizontalListView} array.
           @attr name android:divider
         */
-        public static final int HorizontalListView_android_divider = 1;
+        public static int HorizontalListView_android_divider = 1;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#fadingEdgeLength}
           attribute's value can be found in the {@link #HorizontalListView} array.
           @attr name android:fadingEdgeLength
         */
-        public static final int HorizontalListView_android_fadingEdgeLength = 0;
+        public static int HorizontalListView_android_fadingEdgeLength = 0;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#requiresFadingEdge}
           attribute's value can be found in the {@link #HorizontalListView} array.
           @attr name android:requiresFadingEdge
         */
-        public static final int HorizontalListView_android_requiresFadingEdge = 2;
+        public static int HorizontalListView_android_requiresFadingEdge = 2;
         /**
           <p>This symbol is the offset where the {@link com.meetme.android.horizontallistview.R.attr#dividerWidth}
           attribute's value can be found in the {@link #HorizontalListView} array.
@@ -73,6 +73,6 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.meetme.android.horizontallistview:dividerWidth
         */
-        public static final int HorizontalListView_dividerWidth = 3;
+        public static int HorizontalListView_dividerWidth = 3;
     };
 }
